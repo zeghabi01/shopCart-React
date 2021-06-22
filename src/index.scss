@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Catamaran&display=swap');
+
+$nav_color : #3ab18e;
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: monospace;
+    direction: rtl;
+}
+
+@mixin flex {
+    display: flex;
+    justify-content: space-around
+}
+
+.container nav {
+    @include flex;
+    background-color: $nav_color;
+    color: white;
+    padding: 25px;
+}
+
+
+
+.container nav .cart {
+    position: relative;
+}
+
+.container nav .cart > * {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.container nav .cart span {
+    color: white;
+    background-color: red;
+    width: 30px;
+    height: 30px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: -20px;
+    right: -15px;
+}
+.container .myCart {
+    padding: 10px;    
+}
+
+.container .myCart h1 {
+    margin: 20px 0px;
+    font-weight: 800;
+   text-align: center;
+   font-size: 40px
+}
+
+.container .myCart .emptyCart {
+    text-align: center;
+    font-size: 25px;
+}
+
+.container .myCart .myItem {
+    @include flex;
+    margin-top: 10px;
+}
+
+
+
+.container .myCart .myItem ul {
+        margin: 0px 20px;
+        list-style: none;
+        flex-basis: 33.33%;
+}
+
+.container .myCart .myItem ul li {
+    margin-top: 10px;
+}
+
+
+
+.container .myCart .myItem ul li button {
+    background: transparent;
+    border: 2px solid $nav_color;
+    padding: 2px;
+    font-weight: bold;
+    width: 50px;
+    color: $nav_color;
+    transition: .2s ease-in-out;
+
+}
+
+.container .myCart .myItem ul li button:hover {
+    color: tomato;
+    border: 2px solid tomato;
+
+}
+
+.container .myCart .clear {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container .myCart .clearButton {
+    background: transparent;
+    width: 250px;
+    margin-top: 20px;
+    padding: 10px;
+    color: $nav_color;
+    border: $nav_color 2px solid;
+    font-weight: bold;
+    transition: .5s ease-in-out;
+
+}
+
+.container .myCart .clearButton:hover {
+    background-color: $nav_color;
+    color: white;
+}
+
+.container .myCart hr {
+    margin: 15px;
+}
+
+.container .myCart .cartFooter {
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .myCart .myItem .itemCounter {
+    display: flex;
+    flex-direction: column;
+}
+
+.container .myCart .myItem .itemCounter i {
+    color: $nav_color;
+}
+
+.container .myCart .myItem .itemCounter span {
+    font-weight: bold;
+    text-align: center;
+}
+
+.container .myCart .myItem .itemCounter i:hover {
+    color: green;
+}
+
+.container .myCart .myItem .imgBox img {
+    width: 100px;
+    height: 80px;
+}
+
+
+
+
+

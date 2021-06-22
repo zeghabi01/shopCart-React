@@ -1,0 +1,176 @@
+@import url("https://fonts.googleapis.com/css2?family=Catamaran&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: monospace;
+  direction: rtl;
+}
+
+.container nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background-color: #3ab18e;
+  color: white;
+  padding: 25px;
+}
+
+.container nav .cart {
+  position: relative;
+}
+
+.container nav .cart > * {
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.container nav .cart span {
+  color: white;
+  background-color: red;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  top: -20px;
+  right: -15px;
+}
+
+.container .myCart {
+  padding: 10px;
+}
+
+.container .myCart h1 {
+  margin: 20px 0px;
+  font-weight: 800;
+  text-align: center;
+  font-size: 40px;
+}
+
+.container .myCart .emptyCart {
+  text-align: center;
+  font-size: 25px;
+}
+
+.container .myCart .myItem {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 10px;
+}
+
+.container .myCart .myItem ul {
+  margin: 0px 20px;
+  list-style: none;
+  -ms-flex-preferred-size: 33.33%;
+      flex-basis: 33.33%;
+}
+
+.container .myCart .myItem ul li {
+  margin-top: 10px;
+}
+
+.container .myCart .myItem ul li button {
+  background: transparent;
+  border: 2px solid #3ab18e;
+  padding: 2px;
+  font-weight: bold;
+  width: 50px;
+  color: #3ab18e;
+  -webkit-transition: .2s ease-in-out;
+  transition: .2s ease-in-out;
+}
+
+.container .myCart .myItem ul li button:hover {
+  color: tomato;
+  border: 2px solid tomato;
+}
+
+.container .myCart .clear {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.container .myCart .clearButton {
+  background: transparent;
+  width: 250px;
+  margin-top: 20px;
+  padding: 10px;
+  color: #3ab18e;
+  border: #3ab18e 2px solid;
+  font-weight: bold;
+  -webkit-transition: .5s ease-in-out;
+  transition: .5s ease-in-out;
+}
+
+.container .myCart .clearButton:hover {
+  background-color: #3ab18e;
+  color: white;
+}
+
+.container .myCart hr {
+  margin: 15px;
+}
+
+.container .myCart .cartFooter {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.container .myCart .myItem .itemCounter {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.container .myCart .myItem .itemCounter i {
+  color: #3ab18e;
+}
+
+.container .myCart .myItem .itemCounter span {
+  font-weight: bold;
+  text-align: center;
+}
+
+.container .myCart .myItem .itemCounter i:hover {
+  color: green;
+}
+
+.container .myCart .myItem .imgBox img {
+  width: 100px;
+  height: 80px;
+}
+/*# sourceMappingURL=index.css.map */
